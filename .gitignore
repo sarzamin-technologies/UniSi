@@ -1,0 +1,29 @@
+node_modules
+.pnpm-store
+.turbo
+dist
+build
+**/.next
+**/.next.*
+out
+coverage
+*.tsbuildinfo
+
+# Env
+.env
+.env.local
+.env.*.local
+apps/*/.env
+
+# Misc
+.DS_Store
+*.log
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Signing certs (never commit)
+certs/
+
+# Local Claude settings
+.claude/

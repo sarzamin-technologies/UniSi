@@ -1,0 +1,26 @@
+{
+  "name": "@unisi/db",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema.ts",
+    "./encryption": "./src/encryption.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "drizzle-kit": "drizzle-kit"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.36.4",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.28.1",
+    "@types/pg": "^8.11.10",
+    "typescript": "^5.6.3"
+  }
+}

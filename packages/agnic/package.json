@@ -1,0 +1,27 @@
+{
+  "name": "@unisi/agnic",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./session": "./src/session.ts",
+    "./oauth": "./src/oauth.ts",
+    "./tokens": "./src/tokens.ts",
+    "./balance": "./src/balance.ts",
+    "./topup": "./src/topup.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@unisi/db": "workspace:*",
+    "iron-session": "^8.0.4",
+    "drizzle-orm": "^0.36.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

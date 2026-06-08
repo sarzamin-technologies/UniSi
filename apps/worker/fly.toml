@@ -1,0 +1,20 @@
+# UniSi worker — BullMQ consumer on Fly.io. No HTTP, no public routes.
+
+app = "unisi-worker"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  AGNIC_API_BASE = "https://api.agnic.ai"
+
+[processes]
+  worker = "pnpm start"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
+
+# Same secrets as web (DATABASE_URL, REDIS_URL, SESSION_SECRET, S3_*, AGNIC_PARTNER_ID).

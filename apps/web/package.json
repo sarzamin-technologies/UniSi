@@ -1,0 +1,48 @@
+{
+  "name": "@unisi/web",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-3000}",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint",
+    "postinstall": "node scripts/copy-pdf-worker.mjs"
+  },
+  "dependencies": {
+    "@unisi/agnic": "workspace:*",
+    "@unisi/ai": "workspace:*",
+    "@unisi/audit": "workspace:*",
+    "@unisi/db": "workspace:*",
+    "@unisi/email": "workspace:*",
+    "@unisi/pdf": "workspace:*",
+    "@unisi/shared": "workspace:*",
+    "@unisi/storage": "workspace:*",
+    "@unisi/ui": "workspace:*",
+    "bullmq": "^5.21.2",
+    "drizzle-orm": "^0.36.4",
+    "ioredis": "^5.4.1",
+    "iron-session": "^8.0.4",
+    "next": "^14.2.18",
+    "pdfjs-dist": "^4.7.76",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.3",
+    "remark-gfm": "^4.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/node": "^20.16.10",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.18"
+  }
+}

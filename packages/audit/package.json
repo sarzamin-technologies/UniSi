@@ -1,0 +1,15 @@
+{
+  "name": "@unisi/audit",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "dependencies": {
+    "@unisi/db": "workspace:*",
+    "drizzle-orm": "^0.36.4"
+  },
+  "devDependencies": { "typescript": "^5.6.3" }
+}

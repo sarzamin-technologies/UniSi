@@ -1,0 +1,24 @@
+{
+  "name": "@unisi/ai",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@unisi/agnic": "workspace:*",
+    "@unisi/db": "workspace:*",
+    "@unisi/shared": "workspace:*",
+    "drizzle-orm": "^0.36.4",
+    "openai": "^4.73.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

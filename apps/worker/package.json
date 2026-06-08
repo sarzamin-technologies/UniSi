@@ -1,0 +1,32 @@
+{
+  "name": "@unisi/worker",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "node --env-file=.env --import tsx --watch src/index.ts",
+    "build": "echo 'no build step — run via tsx in production'",
+    "start": "node --import tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@unisi/agnic": "workspace:*",
+    "@unisi/ai": "workspace:*",
+    "@unisi/audit": "workspace:*",
+    "@unisi/db": "workspace:*",
+    "@unisi/email": "workspace:*",
+    "@unisi/pdf": "workspace:*",
+    "@unisi/shared": "workspace:*",
+    "@unisi/storage": "workspace:*",
+    "bullmq": "^5.21.2",
+    "drizzle-orm": "^0.36.4",
+    "pg": "^8.13.1",
+    "ioredis": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.10",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
